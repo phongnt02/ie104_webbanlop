@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/infor-warrany.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/giohang.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app"></div>
+    <script type="module">
+        import {renderApp} from './js/renderApp.js'
+        import {cart} from './js/giohang.js'
+        import {warrany} from './js/warrany.js'
+        let htmlBody = `<div class="baohanh">
+            <div class="warrany">
+                <div class="warrany-box">
+                    <h3 class="warrany-box__heading">Thông Tin Bảo Hành / Warranty Status</h3>
+                    <label for="code" class="warrany-box__label">Nhập mã cào</label>
+                    <div class="warrany-box__item">
+                        <span class="warrany-box__logo-code"><i class="fa-solid fa-barcode"></i></span>
+                        <input type="text" id="code" class="warrany-box__input" placeholder="Nhập mã cào">
+                    </div>
+                    <div class="warrany-box__btn">
+                        <div class="warrany-box__btn-search">Tra cứu</div>
+                    </div>
+                    <div class="warrany-box__message"></div>
+                </div>
+            </div>
+        </div>`
+        renderApp.start(0,htmlBody,0)
+        cart.start();
+        warrany.start();
+    </script>
+</body>
+</html>

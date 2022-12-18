@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/giohang.css">
+    <style>
+        .row {
+            width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+        .favourite__heading {
+            margin-top: 20px;
+            font-size: 18px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ccc;
+            padding: 14px 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+
+    </div>
+    <script type="module" >
+        import {renderApp} from './js/renderApp.js'
+        import {wishList} from './js/wishlist.js'
+        import {cart} from './js/giohang.js'
+        // render body
+        let htmlBody = `<div class="container">
+            <div class="row">
+                <h2 class="favourite__heading">Sản phẩm mâm xe yêu thích của bạn</h2>
+                <ul class="product-list listFavouriteMamXe">
+
+                </ul>
+                <h2 class="favourite__heading">Sản phẩm lốp xe yêu thích của bạn</h2>
+                <ul class="product-list listFavouriteLopXe">
+
+                </ul>
+            </div>
+        </div>`
+        renderApp.start(1,htmlBody)
+        wishList.start('listFavouriteMamXe');
+        wishList.start('listFavouriteLopXe');
+        cart.start();
+    </script>
+</body>
+</html>

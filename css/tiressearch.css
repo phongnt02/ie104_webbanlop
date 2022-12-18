@@ -1,0 +1,65 @@
+.backgr{
+    background-image: url('https://www.phongnt20521745.tk/API/Img/barner-2.jpg');
+    height: 450px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+body {
+    font-family: sans-serif;
+    text-align: justify;
+}
+.content{
+    margin: 0px 100px;
+    display: flex;
+}
+.Search_Form{
+    padding: 20px;
+    width: 350px;
+}
+.form-control{
+    padding-top: 15px;
+    background-origin: padding-box;
+}
+.sidebar_header{
+   
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(164, 164, 164);   
+}
+.form-control select{
+    width: 100%;
+    height: 40px;
+    border-radius: 1mm;
+    border:0.5px solid #ced4da;
+    padding-left: 15px;
+}
+.form-control select:focus{
+    box-shadow: 0 0 0 2px orange; 
+    border:0.5px solid #ced4da;
+}
+.search-btn{
+    padding: 20px;
+    font-size: smaller;
+}
+.search-btn input{
+    padding: 10px;
+    background-color: rgba(244, 121, 32,0.8);
+    border: none;
+    border-radius: 3mm;
+}
+.search-btn input:hover{
+    background-color: orange;
+}
+.product-heading{
+    padding: 13px;
+}
+.right{
+    padding: 20px;
+}
+.product-list{
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+.product-heading span{  
+    padding: none;
+}

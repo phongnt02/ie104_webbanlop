@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/About.css">
+    <link rel="stylesheet" href="./css/giohang.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+
+    </div>
+    
+    <script type="module" >
+        import {renderApp} from './js/renderApp.js'
+        import {cart} from './js/giohang.js'
+        import {blog} from './js/About.js'
+        let htmlBody=`
+       
+    <div class="content ">
+        <div class="left_sidebar">  
+                <a  href="#about">About CST</i></a>
+                <a href="#Gallery">Adventures Gallery <i class="fa-solid fa-image"></i></a>
+                <a href="#video">Adventures Videos <i class="fa-solid fa-photo-film"></i></a>
+        </div>
+        <div class="main_content">
+            <div class="box" id="about">
+            </div>
+
+            <div class="box" id="Gallery">
+                
+                
+            </div>
+
+            <div class="box" id="video">
+               
+              
+            </div>
+            
+        </div>
+    </div>`
+        renderApp.start(1,htmlBody,1)
+        cart.start()
+        blog.start()
+    </script>
+</body>
+</html>

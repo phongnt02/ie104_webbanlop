@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Slick library -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link rel="stylesheet" href="./css/wheelsearch.css">
+        <link rel="stylesheet" href="./css/giohang.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Document</title>
+    </head>
+<body>
+    <div class="app">
+
+    </div>
+    
+    <script type="module" >
+        import {renderApp} from './js/renderApp.js'
+        import {fliter} from './js/wheelfilter.js'
+        let htmlBody=`
+        <div class="backgr"></div>
+        <div class="content">
+            <div class="sidebar">
+                <div class="Search_Form">
+                    <div class="sidebar_header"> 
+                        <h3>TÌM KIẾM MÂM XE</h3>
+                    </div>
+                    <form class="form-control" id="brand_form">
+                        <h4>HÃNG</h4>
+                        <label><input type="checkbox" id="brand" value="Black Rhyno">Black Rhyno<br></label>
+                        <label><input type="checkbox" id="brand" value="Fuel">Fuel<br></label>
+                        <label><input type="checkbox" id="brand" value="KMC">KMC<br></label>
+                        <label><input type="checkbox" id="brand" value="Niche">Niche<br></label>
+                        <label><input type="checkbox" id="brand" value="Rotiform">Rotiform<br></label>
+                    </form>
+                    <form class="form-control" >
+                        <h4>KÍCH T  HƯỚC</h4>
+                        <div  id="options">
+                            <input type="button" id="size" value="13In">
+                            <input type="button" id="size" value="14In">
+                            <input type="button" id="size" value="15In">
+                            <input type="button" id="size" value="16In">
+                            <input type="button" id="size" value="17In">
+                            <input type="button" id="size" value="18In">
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="right">
+                <ul class="product-list">
+
+                </ul>
+            </div>
+        </div>`
+        renderApp.start(0,htmlBody,1)
+        fliter.start() 
+    </script>
+</body>
+</html>
+

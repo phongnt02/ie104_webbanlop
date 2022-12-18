@@ -1,0 +1,130 @@
+.chatElement {
+    position: fixed;
+    right: 0.8%;
+    bottom: 0;
+    z-index: 1;
+    text-align: center;
+    display: none;
+}
+@keyframes ShowSlow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.chatElement.active {
+    display: block;
+    animation: ShowSlow 1s linear;
+}
+.action-list {
+    list-style: none;
+    font-size: 24px;
+    color: #fff;
+}
+.action-list li {
+    padding: 6px 8px;
+    margin: 8px 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.phone {
+    background-color: #00e200;
+}
+.facebook {
+    background-color: #2E89FF;
+}
+.facebook a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Chat box */
+.message {
+    background-color: blue;
+}
+.chat-form {
+    position: absolute;
+    top: -100%;
+    right: 120%;
+    width: 350px;
+    height: 420px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    box-shadow: -3px 6px 14px rgb(0 0 0 / 30%);
+    font-family: sans-serif;
+    display: none;
+}
+.chat-form.active {
+    display: block;
+}
+.chat-header {
+    background-color: #F47920;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    font-size: 22px;
+}
+.chat-body {
+    height: 300px;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.chat-body_content {
+    color: #fff;
+    text-align: left;
+    padding: 12px 14px;
+    background-color: #F47920;
+    max-width: 260px;
+    font-size: 16px;
+}
+.chat-body_content.you {
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    margin: 18px 0;
+    margin-top: 0;
+    align-self: flex-start;
+}
+.chat-body_content.me {
+    margin: 6px 0;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    background-color: #adadad;   
+    align-self: flex-end;
+    display: table;
+}
+.chat-input {
+    height: 50px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+.chat-input input[name="message"] {
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 80%;
+}
+.chat-input i {
+    color: #F47920;
+    transform: translateY(10%);
+}
+/* Top Btn */
+.top-btn {
+    margin: 20px 0;
+    text-align: center;
+    background-color: #F47920;
+    padding: 8px 10px;
+    color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+}

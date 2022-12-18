@@ -1,0 +1,83 @@
+.warrany-box {
+    width: 500px;
+    min-height: 250px;
+    background-color: #ededed;
+    padding: 34px;
+    border-radius: 5px;
+}
+.warrany .warrany-box__heading {
+    text-align: center;
+    margin: 28px 0;
+}
+.warrany-box__label {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.warrany-box__label::after {
+    content: "(*)";
+    color: red;
+    margin-left: 8px;
+    
+}
+.warrany-box__item {
+    position: relative;
+}
+.warrany-box__input {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 40px;
+    padding-right: 10px;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 5px 3px #ccc;
+}
+.warrany-box__logo-code {
+    background-color: #ededed;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    position: absolute;
+    top: 0;
+}
+.warrany .warrany-box__logo-code i {
+    font-size: 18px;
+    color:#000;
+}
+.warrany-box__btn {
+    text-align: center;
+    margin-top: 20px;
+}
+.warrany-box__btn-search {
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #d52b32;
+    display: inline-block;
+    color: #fff;
+}
+.warrany-box__btn-search:hover {
+    cursor: pointer;
+    filter: brightness(0.95);
+}
+.warrany-box__error {
+    display: block;
+    background-color: #f8d7da;
+    color: red;
+    border: 1px solid #f5c6cb;
+    padding: 14px;
+    margin-top: 20px;
+}
+.warrany-box__message {
+    margin-top: 20px;
+}
+.warrany-box__infor-item {
+    margin: 8px 0;
+}
+.warrany-box__infor-label {
+    font-weight: 700;
+}
