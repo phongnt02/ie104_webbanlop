@@ -7,7 +7,7 @@ export const filter ={
  
     getAPI : function () {
         const _this = this;
-        fetch('https://www.phongnt20521745.tk/API/getLopxe.php')
+        fetch('http://www.phongnt20521745.tk/API/getLopxe.php')
         .then((data) =>{
             return data.json()
         .then((completedata) => {

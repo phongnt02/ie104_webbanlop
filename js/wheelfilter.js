@@ -7,7 +7,7 @@ export const fliter ={
  
     getAPI : function () {
         const _this = this;
-        fetch('https://www.phongnt20521745.tk/API/getMamxe.php')
+        fetch('http://www.phongnt20521745.tk/API/getMamxe.php')
         .then((data) =>{
             return data.json().
             then((completedata)=>{

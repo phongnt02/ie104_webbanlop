@@ -2,7 +2,7 @@
 export const warrany = {
     handleEventClick : async function () {
         const _this = this;
-        let response = await fetch('https://www.phongnt20521745.tk/API/getbaohanh.php')
+        let response = await fetch('http://www.phongnt20521745.tk/API/getbaohanh.php')
         let data = await response.json()
 
         // get DOM

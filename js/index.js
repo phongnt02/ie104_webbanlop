@@ -8,7 +8,7 @@ async function index () {
     <div class="wide">
     <div class="content-list">
         <div class="content-list__introduce-img">
-            <img src="https://www.phongnt20521745.tk/API/Img/img-gioithieu.jpg" alt="introduce">
+            <img src="http://www.phongnt20521745.tk/API/Img/img-gioithieu.jpg" alt="introduce">
         </div>
         <div class="content-list__item">
             <h2 class="content-list__item-heading">Giới thiệu về lốp xe</h2>
@@ -30,7 +30,7 @@ async function index () {
     </div>`
 
     // render san pham mam xe
-    let responseMamxe = await fetch('https://www.phongnt20521745.tk/API/getMamxe.php')
+    let responseMamxe = await fetch('http://www.phongnt20521745.tk/API/getMamxe.php')
     let dataMamxe = await responseMamxe.json()    
     htmlBody += `<div class="product">
             <h1 class="product-heading">Sản phẩm mâm xe</h1>
@@ -51,17 +51,17 @@ async function index () {
     htmlBody += `<div class="product-list-intro">
             <a href="#" class="product-intro-item">
                 <div class="product-intro-item__img">
-                    <img src="https://www.phongnt20521745.tk/API/Img/intro1.jpg" alt="mamxe">
+                    <img src="http://www.phongnt20521745.tk/API/Img/intro1.jpg" alt="mamxe">
                 </div>
             </a>
             <a href="#" class="product-intro-item">
                 <div class="product-intro-item__img">
-                    <img src="https://www.phongnt20521745.tk/API/Img/intro2.jpg" alt="mamxe">
+                    <img src="http://www.phongnt20521745.tk/API/Img/intro2.jpg" alt="mamxe">
                 </div>
             </a>
             <a href="#" class="product-intro-item">
                 <div class="product-intro-item__img">
-                    <img src="https://www.phongnt20521745.tk/API/Img/intro3.jpg" alt="mamxe">
+                    <img src="http://www.phongnt20521745.tk/API/Img/intro3.jpg" alt="mamxe">
                 </div>
             </a>
             </div>`
@@ -69,7 +69,7 @@ async function index () {
     // render san pham lop xe
     htmlBody += `<h1 class="product-heading">Sản phẩm lốp xe</h1>
             <div class="product-list">`
-    let responseLopxe = await fetch('https://www.phongnt20521745.tk/API/getLopxe.php')
+    let responseLopxe = await fetch('http://www.phongnt20521745.tk/API/getLopxe.php')
     let dataLopxe = await responseLopxe.json()
 
     dataLopxe.forEach(element => {
@@ -89,7 +89,7 @@ async function index () {
                     <h1 class="commit-heading">Cam kết từ chúng tôi</h1>
                     <div class="commit-about">
                         <ul class="commit-about-list">`
-    let responseCommit = await fetch('https://www.phongnt20521745.tk/API/commit.php')
+    let responseCommit = await fetch('http://www.phongnt20521745.tk/API/commit.php')
     let dataCommit = await responseCommit.json()
     dataCommit.forEach(element => {
         htmlBody += `<li class="commit-about-item">

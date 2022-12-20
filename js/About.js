@@ -4,7 +4,7 @@ export const blog ={
  
     getAPI : function () {
         const _this = this;
-        fetch('https://www.phongnt20521745.tk/API/blog.php')
+        fetch('http://www.phongnt20521745.tk/API/blog.php')
         .then((data) =>{
             return data.json().
             then((completedata)=>{
