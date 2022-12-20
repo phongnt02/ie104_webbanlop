@@ -114,12 +114,66 @@ export const filter ={
         let list = document.querySelector('.product-list')
            list.innerHTML='';
            this.data.map((values)=>{
-            if (arr.length==0) this.show(values);
+            if (arr.length==0) {
+                list.innerHTML +=`
+                            <li class="product-item">
+                                <a href="#" class="product-item-link">
+                                    <div class="product-item__img">
+                                        <img src="${values.pathImgUrl}" alt="lopxe">
+                                        <div class="product-item__add-cart">
+                                            <p class="product-item__add-cart-text">Thêm vào giỏ hàng</p>
+                                            <div class="product-item__add-cart-icon">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__favourite-search">
+                                            <div class="product-item__favourite">
+                                                <span class="product-item__favourite-detail">Yêu thích</span>
+                                                <i class="fa-regular fa-heart"></i>
+                                            </div>
+                                            <div class="product-item__search">
+                                                <span class="product-item__search-detail">Xem nhanh</span>
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="product-item__heading">${values.ProductName}</h3>
+                                    <p class="product-item__attribute">${values.Size}</p>
+                                    <span class="product-item__price-label">Giá : <span class="product-item__price"> ${values.Price}</span></span>
+                                </a>        
+                            </li>`
+            }
                 else {
                         var arr1=[];
                         arr1.push(values.width,values.height,values.brand.toUpperCase(),values.Size)
                         if(this.KTMangCon(arr,arr1,arr.length,arr1.length)==1){
-                            this.show(values)
+                            list.innerHTML +=`
+                            <li class="product-item">
+                                <a href="#" class="product-item-link">
+                                    <div class="product-item__img">
+                                        <img src="${values.pathImgUrl}" alt="lopxe">
+                                        <div class="product-item__add-cart">
+                                            <p class="product-item__add-cart-text">Thêm vào giỏ hàng</p>
+                                            <div class="product-item__add-cart-icon">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__favourite-search">
+                                            <div class="product-item__favourite">
+                                                <span class="product-item__favourite-detail">Yêu thích</span>
+                                                <i class="fa-regular fa-heart"></i>
+                                            </div>
+                                            <div class="product-item__search">
+                                                <span class="product-item__search-detail">Xem nhanh</span>
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="product-item__heading">${values.ProductName}</h3>
+                                    <p class="product-item__attribute">${values.Size}</p>
+                                    <span class="product-item__price-label">Giá : <span class="product-item__price"> ${values.Price}</span></span>
+                                </a>        
+                            </li>`
                         }
                     }
             })

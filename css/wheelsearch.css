@@ -9,12 +9,18 @@ body {
     font-family: sans-serif;
 }
 .content{
-    margin: 0px 100px;
+    margin: 0px auto;
     display: flex;
+    max-width: 1200px;
+}
+.sidebar{
+    flex-basis:  21%;
+}
+.right{
+    flex-basis: 79%;
 }
 .Search_Form{
     padding: 20px;
-    width: 350px;
 }
 .sidebar_header{
     padding-bottom: 15px;
