@@ -581,10 +581,19 @@ footer{
   list-style-type: none;
 }
 
+.footer__more{
+    width: 100%;
+}
+
+#footer__offer--table-all{
+    width: 100%;
+}
+
 .footer__offer--table{
-  padding-top: 5px;
-  padding-bottom: 10px;
-    width: 1000px;
+    margin-left: 19%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: 80%;
     vertical-align: top;
     float: left;
     color:rgba(255, 255, 255, 0.459);
@@ -596,7 +605,8 @@ footer{
 }
 
 .footer__offer--table--td{
-  width: 250px;
+    width:200px;
+    text-align: left;
 }
 
 .container-1{

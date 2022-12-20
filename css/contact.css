@@ -1,0 +1,150 @@
+#contact__contentner{
+    display: flex;
+    font-family: arial;
+    margin-left: 20px;
+    font-variant:initial;
+}
+
+#contact__content--left{ 
+    width: 54%;
+    background: white;
+    padding: 20px;
+    min-height: 300px;
+    display: inline;
+}
+
+#contact__content--right{
+    width: 600px;
+    background: white;
+    padding-left: 20px;
+    min-height: 200px;
+    padding-left: 0px;
+}
+
+.crl{
+    clear: both;
+}
+
+.backgr{
+    background-image: url('https://www.phongnt20521745.tk/API/Img/barner-2.jpg');
+    background-position-y: -60px;
+    height: 350px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.contact__block{
+    width: 224px;
+    background-color: rgb(255, 245, 236);
+    min-height: 280px;
+    float:left;
+    padding: 0px 15px;
+    margin: 5px;
+    line-height: 22px;
+}
+
+.contact__block h3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.contact__block__header{
+    font-size: 20px;
+    color: rgb(222, 92, 0);
+}
+
+.contact__block--address{
+    height: 34px;
+    font-size: 14px;
+}
+
+.contact__block--hotline{
+    padding-top: 80px;
+    font-size: 16px;
+}
+
+.contact__block--icon{
+    color: rgb(222, 92, 0);
+    text-align: center;
+}
+
+.style__text-align--center{
+    text-align: center;
+}
+
+.contact__form__header{
+    padding-top: 15px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: rgb(6, 3, 1);
+}
+
+.contact__form__input{
+    width: 240px;
+    height: 33px;
+    margin-bottom: 40px;
+    margin-right: 25px;
+    padding-left: 20px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.nan--margintop{
+    margin-top: 0px;
+}
+
+.nan--marginbottom{
+    margin-bottom: 18px;
+}
+
+.contact__form__texarea{
+    width: 86%;
+    font-family: arial;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-bottom:7px;
+    border-radius: 3px;
+}
+
+.contact__form__submit{
+    width: 160px;
+    height: 35px;
+    border: solid white;
+    background-color: rgb(222, 92, 0);
+    color: aliceblue;
+    font-size: 15px;
+}
+.contact__form__submit:hover{
+    border: solid rgb(255, 123, 0);
+    background-color: rgb(255, 123, 0);
+    box-shadow: 10px rgba(170,153,255,255);
+}
+
+.contact__form__input:focus {
+    border-color: rgb(222, 92, 0);
+    box-shadow: 0 0 0 3px rgb(255, 212, 171);
+}
+.contact__form__input:focus {
+        outline: 3px solid transparent;
+}
+
+.contact__form__input input {
+    outline: 3px solid transparent;
+    transition: 180ms box-shadow ease-in-out;
+}
+
+.contact__form__texarea:focus {
+    border-color: rgb(222, 92, 0);
+    box-shadow: 0 0 0 3px rgb(255, 212, 171);
+}
+
+.contact__form__texarea:focus {
+    outline: 3px solid transparent;
+}
+
+.contact__form__texarea textarea{
+    outline: 3px solid transparent;
+    transition: 180ms box-shadow ease-in-out;
+}

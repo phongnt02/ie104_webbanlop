@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+        <link rel="stylesheet" href="./css/Warranty.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/giohang.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <title>Document</title>
+    </head>
+<body>
+    <div class="app">
+
+    </div>
+    
+    <script type="module" >
+        import {renderApp} from './js/renderApp.js'
+        import {Address} from './js/kiemtra.js'
+        import {cart} from './js/giohang.js'
+        let htmlBody=`
+    <div class="block__content" align="center">
+        <div class="form__warranty">
+            <h2>Kích hoạt bảo hành</h2>
+            <div class="block__display">
+                <form id="form-2">
+
+                    <div class="form__left">
+                        <p class="form__text">Mã cào <span>(*)</span></p>
+                        <input name="code--id" id="code--id" class="form__input" type="text" placeholder="Nhập mã thẻ cào" pattern="[0-9]{3,8}"
+                        title="Vui lòng nhập đúng mã thẻ cào" required>
+
+                        <p class="form__text">Tỉnh thành / Province <span>(*)</span></p>
+                        <select id="tinh_tp" class="form__select" name="calc_shipping_provinces" required="">
+                        <option value="0">Tỉnh / Thành phố</option>
+                        </select>
+
+                        <p class="form__text">Số điện thoại / Phone Number <span>(*)</span></p>
+                        <input name="pnb" id="pnb" class="form__input" type="text" placeholder="Nhập số điện thoại" pattern="[0-9]{8,1010}"
+                        title="Vui lòng nhập đúng số điện thoại" required>
+
+                        <p class="form__text">Địa chỉ / Address <span>(*)</span></p>
+                        <input name="address" id="address" class="form__input" type="text" placeholder="Nhập địa chỉ" pattern="[A-Za-z]{3,100}"
+                        title="Vui lòng nhập địa chỉ" required>
+                    </div>
+
+                    <div class="form__left">
+                        <p class="form__text">Tên sản phẩm / Product Name <span>(*)</span></p>
+                        <input name="name__product" id="name__product" class="form__input" type="text" placeholder="Nhập tên sản phẩm" pattern="[A-Za-z0-9]{3,100}"
+                        title="Vui lòng nhập đúng tên sản phẩm" required>
+
+                        <p class="form__text">Quận huyện / District <span>(*)</span></p>
+                        <select id = "quan_huyen" class="form__select" name="calc_shipping_district" required="">
+                            <option value="0">Quận / Huyện</option>
+                        </select>
+
+                        <p class="form__text">Họ tên / Full Name <span>(*)</span></p>
+                        <input name="name" id="name" class="form__input" type="text" placeholder="Nhập họ và tên" pattern="[A-Za-z]{3,100}"
+                        title="Vui lòng nhập đúng họ và tên" required>
+
+                        <p class="form__text">Email <span>(*)</span></p>
+                        <input name="email" id="email" class="form__input" type="email" placeholder="Email" placeholder="email@address.com" required>
+                    </div>
+
+                </form>
+            </div>
+            <div class="crl"></div>
+            <div>
+                <button form="form-2" type="submit" class="form__btn">Kích hoạt bảo hành</button>
+            </div>
+
+        </div>`
+        renderApp.start(0,htmlBody,0)
+        cart.start()
+        Address.getAddress()
+        Address.getDistrict()
+
+    </script>
+        
+</body>
+</html>

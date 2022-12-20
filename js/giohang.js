@@ -180,7 +180,7 @@ export const cart = {
                 </div>
                 <div class="cart-btn">
                     <a href="#" class="cart-btn__view">Xem giỏ hàng</a>
-                    <a href="#" class="cart-btn__pay">Thanh toán</a>
+                    <a href="./print__form__order.html" class="cart-btn__pay">Thanh toán</a>
                 </div>
             </div>
         </div>`

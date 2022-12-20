@@ -17,8 +17,7 @@ export const renderApp = {
                         </ul>
                     </li>
                     <li><a href="./baohanh.html">BẢO HÀNH</a></li>
-                    <li><a href="">LIÊN HỆ</a></li>
-                    
+                    <li><a href="./print__contact.html">LIÊN HỆ</a></li>
                 </ul>
             </nav>
             <nav id="nav-right">
@@ -58,27 +57,27 @@ export const renderApp = {
             htmlFooter += `<div>
                 <hr width="max" color="#f47920" size="4px">
                 <h1 class="footer__logo">
-                    <b>G7<span class="footer__logo--color">Auto</span></b>
+                    <b><span class="footer__logo--color">CST</span></b>
                 </h1>
-                <p class="footer__intro"><b>G7AUTO - NHÀ PHÂN PHỐI LỐP VÀ ẮC QUY Ô TÔ CHÍNH HÃNG SỐ #1 VIỆT NAM</b></p>
+                <p class="footer__intro"><b>CST - NHÀ PHÂN PHỐI LỐP VÀ ẮC QUY Ô TÔ CHÍNH HÃNG SỐ #1 VIỆT NAM</b></p>
             </div>
             <div class="content__block">
                 <div class="footer__content" id="footer__content--left" align="center">
-                    G7Auto là chuỗi cửa hàng chuyên phân phối các sản phẩm lốp, ắc quy, đồ chơi, nội thất ô tô. Các sản phẩm tại
-                    G7Auto đều 100% chính hãng, bảo hành đầy đủ. Bên cạnh đó, G7Auto còn cung cấp các dịch vụ liên quan như rửa
+                    CST là chuỗi cửa hàng chuyên phân phối các sản phẩm lốp, ắc quy, đồ chơi, nội thất ô tô. Các sản phẩm tại
+                    CST đều 100% chính hãng, bảo hành đầy đủ. Bên cạnh đó, CST còn cung cấp các dịch vụ liên quan như rửa
                     xe thay dầu, cứu hộ ắc quy, căn chỉnh lốp, cân bằng động,... Với phương châm “Uy tín, chất lượng và giá tốt
-                    nhất cho người tiêu dùng”, G7Auto vinh hạnh trở thành người bạn tin cậy luôn đồng hành chăm sóc cho xế yêu.
+                    nhất cho người tiêu dùng”, CST vinh hạnh trở thành người bạn tin cậy luôn đồng hành chăm sóc cho xế yêu.
                     </p>
                 </div>
         
                 <div class="footer__content" id="footer__content--right">
-                    <p>Hotline: 0848911111-Email: lienhe@g7auto.vn<br><br>
+                    <p>Hotline: 0848911111-Email: lienhe@CST.vn<br><br>
                         Địa chỉ: D29 Phạm Văn Bạch, Q. Cầu Giấy, Hà Nội<br><br>
                         Văn phòng trụ sở: 91 Trung Kính, P. Trung Hoà, Q. Cầu Giấy, Hà Nội<br><br>
                 </div>
             </div>
-            <div>
-                <table align="center" id="footer__offer--table">
+            <div class="footer__more">
+                <table align="center" id="footer__offer--table-all">
                     <tr class="footer__offer--table">
                         <td class="footer__offer--table--td">
                             <ul class="footer__offer--ul">
@@ -86,13 +85,13 @@ export const renderApp = {
                                     <span class="footer__offer--head"><b>MÂM Ô TÔ</b></span>
                                 </li>
                                 <li>
-                                    Mâm ..
+                                    Mâm Black Rhyno
                                 </li>
                                 <li>
-                                    Mâm ..
+                                    Mâm Fuel
                                 </li>
                                 <li>
-                                    Mâm ..
+                                    Mâm Niche
                                 </li>
                             </ul>
                         </td>
@@ -113,18 +112,7 @@ export const renderApp = {
                                 <li>
                                     Lốp Continantal
                                 </li>
-                                <li>
-                                    Lốp Hankook
-                                </li>
-                                <li>
-                                    Lốp Goodyear
-                                </li>
-                                <li>
-                                    Lốp Dunlop
-                                </li>
-                                <li>
-                                    Lốp Toyo
-                                </li>
+
                             </ul>
                         </td>
                         <td class="footer__offer--table--td">
@@ -139,9 +127,6 @@ export const renderApp = {
                                     Chính sách bảo hành
                                 </li>
                                 <li>
-                                    Chính sách bảo mật
-                                </li>
-                                <li>
                                     Chính sách vận chuyển
                                 </li>
                                 <li>
@@ -149,9 +134,6 @@ export const renderApp = {
                                 </li>
                                 <li>
                                     Chính sách thanh toán
-                                </li>
-                                <li>
-                                    Chính sách đổi trả
                                 </li>
                             </ul>
                         </td>

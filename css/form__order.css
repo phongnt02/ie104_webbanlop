@@ -1,0 +1,192 @@
+#form__order__content{
+    margin: 40px 15%;
+    margin-top: 10px;
+    font-family: arial;
+    font-weight:lighter;
+    height: 500px;
+    padding: 50px;
+    padding-top: 10px;
+}
+
+
+.header_container_logo img{
+    max-width: 125px;
+    height: auto;
+    padding: 50px 10px;
+    padding-bottom: 10px;
+}
+a.header_container_logo{
+    margin: 25px 15%;
+    font-size: 80px;
+    color:#f47920;
+}
+
+.contact__form__input{
+    width: 85%;
+    height: 35px;
+    margin-bottom: 12px;
+    margin-right: 25px;
+    padding-left: 20px;
+    border-radius: 3px;
+    border: 2px #d9d9d900 solid;
+    border-color: rgba(0, 0, 0, 0.225);
+}
+
+.content__minwidth{
+    min-width: 400px;
+    background-color: rgb(218, 216, 216);
+    border-radius: 10px;
+}
+
+.left__content{
+    padding-left: 15px;
+    min-width: 400px;
+    width: 47%;
+    text-align: left;
+    float: left ;
+}
+
+.left__content h2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contact__form__texarea{
+    width: 85%;
+    font-family: arial;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-bottom:7px;
+    border-radius: 3px;
+    border: 2px #d9d9d94e solid;
+    border-color: rgba(0, 0, 0, 0.225);
+}
+
+.contact__form__select{
+    width: 85%;
+    height: 40px;
+    margin-right: 25px;
+    padding-left: 20px;
+    border-radius: 4px;
+    display: block;
+    border: 2px #d9d9d900 solid;
+    border-color: rgba(0, 0, 0, 0.225);
+}
+
+.form__btn {
+    background-color: orange;
+    width: 100px;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 0;
+    margin: 16px 0 32px;
+    cursor: pointer;
+}
+
+input:hover{
+    border-color: orange;
+}
+
+
+.amount {
+    color: rgb(28, 28, 28);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.backgr{
+    background-image: url('https://www.phongnt20521745.tk/API/Img/barner-2.jpg');
+    background-position-y: -60px;
+    height: 350px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.cost {
+    color: #f47920;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.block__content{
+    display: inline;
+}
+
+.crl{
+    padding: 25px;
+    clear: both;
+}
+
+
+.total__money{
+    height: 80px;
+}
+
+.info__GPS{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.list__row{
+    height: 110px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.card__img{
+    width: 100px;
+}
+
+.card__hr{
+    float: left;
+    width: 250px;
+    margin-bottom: 0px;
+
+}
+
+.ordernote__bank{
+    color: rgb(97, 96, 96);
+    padding: 10px;
+    font-size: 13px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 15px;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+.card__money{
+    padding-left: 150px;
+}
+
+#output__totalmoney{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 155px;
+}
+
+.payment{
+    padding-top: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+.total__cost{
+    color: #f47920;
+    
+}

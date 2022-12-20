@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="/css/form__order.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="./css/giohang.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        
+        <title>Document</title>
+    </head>
+<body>
+    <div class="app">
+
+    </div>
+    
+    <script type="module" >
+        import {renderApp} from './js/renderApp.js'
+        import {Address} from './js/order__form.js'
+        import {getProduct} from './js/order__form.js'
+        import {cart} from './js/giohang.js'
+        let htmlBody=`
+        <div class="backgr">
+
+        </div>
+    <div id="form__order__content" >
+        
+        <div class="block__content">
+
+            <form id="form-1" class="left__content">
+                <h2>
+                    Thông tin nhận hàng
+                </h2>
+                <input name="full-name" id="full-name" class="contact__form__input" type="text" placeholder="Họ và tên" pattern="[A-Za-z]{3,100}"
+                title="Vui lòng nhập đầy đủ họ và tên" required>
+                <br>
+                <input name="email" id="email" class="contact__form__input" type="email" placeholder="Email" placeholder="email@address.com" required>
+                <br>
+                <input name="pnb" id="pnb" class="contact__form__input" type="text" placeholder="Số điện thoại" pattern="[0-9]{9,10}" title="Vui lòng nhập đúng số điện thoại" required>
+                <br>
+                <input name="address" id="address" class="contact__form__input" type="text" placeholder="Địa chỉ (tùy chọn)" pattern="[A-Za-z]{5,100}"
+                title="Vui lòng nhập đầy đủ địa chỉ giao hàng" required>
+                <br>
+
+                
+
+                <select id="tinh_tp" class="contact__form__select" required="">
+                    <option value="0">Tỉnh / Thành phố</option>
+                </select>
+
+                <br>
+
+                <select id = "quan_huyen" class="contact__form__select" required="">
+                    <option value="0">Quận / Huyện</option>
+                </select>
+
+                <br>
+                <textarea class="contact__form__texarea" cols="45" rows="3" placeholder="Ghi chú (tùy chọn)"></textarea><br>
+                
+            </form>
+            
+            <div class="left__content content__minwidth">
+                <h2 align="center">Đơn hàng của bạn</h2>
+
+                <div id="output__product">
+                    
+                </div>
+
+                <div id="output__totalmoney">
+                    
+                </div>
+
+                <div class="payment">
+                    <lable>
+                        <input id="pay" name="pay" type="radio" value="cash"><b>Thanh toán khi nhận hàng</b><br>
+                        <div id="pay__cash" class="ordernote__bank">
+                           
+                        </div>
+                        <input id="pay" name="pay" type="radio" value="bank"><b>Chuyển khoản ngân hàng</b>
+                        <div id="pay__bank" class="ordernote__bank">
+                            
+                        </div>
+                    </lable>
+                    
+                    
+                </div>
+
+                <button form="form-1" type="submit" class="form__btn">Đặt Hàng</button>
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="crl"></div>`
+
+        renderApp.start(0,htmlBody,1)
+        cart.start()
+        Address.start()
+        getProduct.start()
+
+    </script>
+   
+</html>

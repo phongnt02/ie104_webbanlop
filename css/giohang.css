@@ -281,7 +281,7 @@
     text-align: left;
 }
 .amount {
-    color: #ccc;
+    color: rgb(130, 130, 130);
     font-size: 14px;
     font-weight: 600;
 }

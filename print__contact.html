@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Slick library -->
+       
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="./css/giohang.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        
+        <title>Document</title>
+    </head>
+<body>
+    <div class="app">
+
+    </div>
+    
+    <script type="module" >
+        import {renderApp} from './js/renderApp.js'
+        import {cart} from './js/giohang.js'
+        let htmlBody=`
+        <div class="backgr">
+
+        </div>
+        <div id="contact__contentner">
+        <div id="contact__content--left">
+            <div class="contact__block">
+                <h3 class="contact__block__header">CHI NHÁNH 1</h3>
+                <p class="contact__block--address">
+                    <b><i class="fa-solid fa-location-dot"></i> Địa chỉ:</b> 111 Kha Vạn Cân, phường Linh Trung, quân Thủ Đức, Tp Hồ Chí Minh
+                </p>
+                <p class="contact__block--hotline">
+                    <b><i class="fa-sharp fa-solid fa-phone"></i> Hotline:</b> 0964 21 7979
+                    <p class="contact__block--icon">
+                        <i class="fa-solid fa-location-crosshairs fa-2x"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-phone-volume fa-2x"></i>
+                        <p class="style__text-align--center">Đường đi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gọi điện</p>
+                    </p>
+                </p>
+            </div>
+            <div class="contact__block">
+                <h3 class="contact__block__header">CHI NHÁNH 2</h3>
+                <p class="contact__block--address">
+                    <b><i class="fa-solid fa-location-dot"></i> Địa chỉ:</b> số 175 Xa Lộ Hà Nội, phường Thảo Điền, tp Thủ Đức
+                </p>
+                <p class="contact__block--hotline">
+                    <b><i class="fa-sharp fa-solid fa-phone"></i> Hotline:</b> 0964 21 7979
+                    <p class="contact__block--icon">
+                        <i class="fa-solid fa-location-crosshairs fa-2x"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-phone-volume fa-2x"></i>
+                        <p class="style__text-align--center">Đường đi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gọi điện</p>
+                    </p>
+                </p>
+            </div>
+            <div class="contact__block">
+                <h3 class="contact__block__header">CHI NHÁNH 3</h3>
+                <p class="contact__block--address">
+                    <b><i class="fa-solid fa-location-dot"></i> Địa chỉ:</b> 86E Song Hành, P An Phú, Q2, Tp Hồ Chí Minh 
+                </p>
+                <p class="contact__block--hotline">
+                    <b><i class="fa-sharp fa-solid fa-phone"></i> Hotline:</b> 0964 21 7979
+                    <p class="contact__block--icon">
+                        <i class="fa-solid fa-location-crosshairs fa-2x"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-phone-volume fa-2x"></i>
+                        <p class="style__text-align--center">Đường đi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gọi điện</p>
+                    </p>
+                </p>
+            </div>
+            <div class="contact__block">
+                <h3 class="contact__block__header">CHI NHÁNH 4</h3>
+                <p class="contact__block--address">
+                    <b><i class="fa-solid fa-location-dot"></i> Địa chỉ:</b> Số 889 Trường Chinh (ngã tư Trường Chinh - Tây Thạnh), phường Tây Thạnh, quận Tân Phú, TpHCM
+                </p>
+                <p class="contact__block--hotline">
+                    <b><i class="fa-sharp fa-solid fa-phone"></i> Hotline:</b> 0964 21 7979
+                    <p class="contact__block--icon">
+                        <i class="fa-solid fa-location-crosshairs fa-2x"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-phone-volume fa-2x"></i>
+                        <p class="style__text-align--center">Đường đi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gọi điện</p>
+                    </p>
+                </p>
+            </div>
+            <div class="contact__block">
+                <h3 class="contact__block__header">CHI NHÁNH 5</h3>
+                <p class="contact__block--address">
+                <b><i class="fa-solid fa-location-dot"></i> Địa chỉ:</b> Số 636-638 Tên Lửa, P. Bình Trị Đông, Q. Bình Thanh, TpHCM
+                </p>
+                <p class="contact__block--hotline">
+                    <b><i class="fa-sharp fa-solid fa-phone"></i> Hotline:</b> 0964 21 7979
+                    <p class="contact__block--icon">
+                        <i class="fa-solid fa-location-crosshairs fa-2x"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-phone-volume fa-2x"></i>
+                        <p class="style__text-align--center">Đường đi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gọi điện</p>
+                    </p>
+                </p>
+            </div>
+            <div class="contact__block">
+                <h3 class="contact__block__header">CHI NHÁNH 6</h3>
+                <p class="contact__block--address">
+                    <b><i class="fa-solid fa-location-dot"></i> Địa chỉ:</b>số 1409 Huỳnh Tấn Phát (ngã 4 Huỳnh Tấn Phát-Hoàng Quốc Việt, kế bên cây xăng) Q7. TpHCM
+                </p>
+                <p class="contact__block--hotline">
+                    <b><i class="fa-sharp fa-solid fa-phone"></i> Hotline:</b> 0964 21 7979
+                    <p class="contact__block--icon">
+                        <i class="fa-solid fa-location-crosshairs fa-2x"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-phone-volume fa-2x"></i>
+                        <p class="style__text-align--center">Đường đi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gọi điện</p>
+                    </p>
+                </p>
+            </div>
+        </div>
+        <div id="contact__content--right">
+            <h1 class="contact__form__header">
+                FORM LIÊN HỆ
+            </h1>
+            <div>
+            <form name="contact">
+                <input class="contact__form__input nan--margintop nan--marginbottom" type="text" placeholder="Họ và tên" pattern="(?=.*[a-z])(?=.*[A-Z]).{3,}"
+                title="Vui lòng nhập đầy đủ họ và tên" required>
+                <input class="contact__form__input nan--margintop nan--marginbottom" type="email" placeholder="Email" placeholder="email@address.com" required>
+                <br>
+                <input class="contact__form__input nan--marginbottom" type="text" placeholder="Số điện thoại" pattern="[0-9]{9,10}" title="Vui lòng nhập đúng số điện thoại" required>
+                <input class="contact__form__input nan--marginbottom" type="text" placeholder="Chủ đề" pattern="(?=.*[a-z]).{3,}"
+                title="Vui lòng nhập chủ đề" required>
+                <br>
+                <textarea class="contact__form__texarea" rows="7" placeholder="Lời nhắn"></textarea>
+                <br>
+                <a>
+                <input id="contact" class="contact__form__submit" type="submit" value="Gửi đi">
+                </a>
+            </form>
+            </div>
+        </div>
+    </div>`
+        renderApp.start(0,htmlBody,1)
+        cart.start()
+  
+    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   
+</body>
+</html>
