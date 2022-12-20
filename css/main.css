@@ -172,7 +172,7 @@ a.header_container_logo{
 
 /* Barner */
 .header_background{
-    background-image: url('https://www.phongnt20521745.tk/API/Img/header-back.jpg');
+    background-image: url('http://www.phongnt20521745.tk/API/Img/header-back.jpg');
     height: 450px;
 
     background-size: cover;
@@ -445,7 +445,7 @@ body {
 }
 /* consultation */
 .consultation {
-    background-image: url('https://www.phongnt20521745.tk/API/Img/consulation.jpg');
+    background-image: url('http://www.phongnt20521745.tk/API/Img/consulation.jpg');
     background-size: fill;
     background-repeat: no-repeat;
     width: 100%;
@@ -483,7 +483,7 @@ body {
 
 /* section bảo hành */
 .baohanh {
-    background-image: url('https://www.phongnt20521745.tk/API/Img/baohanh.jpg');
+    background-image: url('http://www.phongnt20521745.tk/API/Img/baohanh.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;

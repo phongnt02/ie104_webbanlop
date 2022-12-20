@@ -5,7 +5,7 @@ export const renderApp = {
         <div class="nav">
             <nav id="nav-left" class="header_container">
                 <a href="" class="header_container_logo">
-                    <img src="https://www.phongnt20521745.tk/API/Img/logo.png" alt="ChengShinTires">
+                    <img src="http://www.phongnt20521745.tk/API/Img/logo.png" alt="ChengShinTires">
                 </a>
                 <ul class="main-menu">
                     <li><a href="./index.html">TRANG CHỦ</a></li>
