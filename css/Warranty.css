@@ -15,14 +15,20 @@
 
 }
 
+.crl{
+    padding: 25px;
+    clear: both;
+}
+
 .block__content{
     background-image: url('https://www.phongnt20521745.tk/API/Img/baohanh.jpg');
     background-repeat:no-repeat;
     background-size: 100%;
     width: 1500;
-    height: 650px;
+    height: auto;
     padding-top: 85px;
     font-family: arial;
+    margin-bottom: 15px;
 }
 
 .form__warranty{
