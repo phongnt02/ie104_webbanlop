@@ -93,36 +93,38 @@ export const wishList = {
         let data = JSON.parse(localStorage.getItem(keyItem))
         let favouriteList = document.querySelector('.'+keyItem)
         let html = ``
-        data.map(item => {
-            html += `
-            <li class="product-item">
-                        <div class="product-item-delete ${keyItem}">
-                            <i class="fa-solid fa-xmark"></i>Gỡ
-                        </div>
-                        <a href="#" class="product-item-link">
-                            <div class="product-item__img">
-                                <img src="${item.pathImgUrl}" alt="mamxe">
-                                <div class="product-item__add-cart">
-                                    <p class="product-item__add-cart-text">Thêm vào giỏ hàng</p>
-                                    <div class="product-item__add-cart-icon">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                                <div class="product-item__favourite-search">
-                                    <div class="product-item__search">
-                                        <span class="product-item__search-detail">Xem nhanh</span>
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </div>
-                                </div>
+        if(data !== null) {
+            data.map(item => {
+                html += `
+                <li class="product-item">
+                            <div class="product-item-delete ${keyItem}">
+                                <i class="fa-solid fa-xmark"></i>Gỡ
                             </div>
-                            <h3 class="product-item__heading">${item.name}</h3>
-                            <p class="product-item__attribute">${item.attribute}</p>
-                            <span class="product-item__price-label">Giá : <span class="product-item__price">${item.price}</span></span>
-                        </a>        
-                    </li>
-            `
-        })
-        favouriteList.innerHTML = html;
+                            <a href="#" class="product-item-link">
+                                <div class="product-item__img">
+                                    <img src="${item.pathImgUrl}" alt="mamxe">
+                                    <div class="product-item__add-cart">
+                                        <p class="product-item__add-cart-text">Thêm vào giỏ hàng</p>
+                                        <div class="product-item__add-cart-icon">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__favourite-search">
+                                        <div class="product-item__search">
+                                            <span class="product-item__search-detail">Xem nhanh</span>
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="product-item__heading">${item.name}</h3>
+                                <p class="product-item__attribute">${item.attribute}</p>
+                                <span class="product-item__price-label">Giá : <span class="product-item__price">${item.price}</span></span>
+                            </a>        
+                        </li>
+                `
+            })
+            favouriteList.innerHTML = html;
+        }
     },
     deleteItem : function (keyItem) {
         const _this = this;

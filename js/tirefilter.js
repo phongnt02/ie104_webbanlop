@@ -5,16 +5,14 @@ export const filter ={
     arr : [],
     data: null,
  
-    getAPI : function () {
-        const _this = this;
-        fetch('http://www.phongnt20521745.tk/API/getLopxe.php')
-        .then((data) =>{
-            return data.json()
-        .then((completedata) => {
-                _this.data = completedata
-                let html = ``
-                _this.data.map((values) => {
-                    html +=`<li class="product-item">
+    getAPI : async function () {
+        let respon = await fetch('http://www.phongnt20521745.tk/API/getLopxe.php')
+        let data = await respon.json()
+
+        this.data = data
+        let html = ``
+        this.data.map((values) => {
+            html += `<li class="product-item">
                     <a href="#" class="product-item-link">
                         <div class="product-item__img">
                             <img src="${values.pathImgUrl}" alt="lopxe">
@@ -40,13 +38,12 @@ export const filter ={
                         <span class="product-item__price-label">Giá : <span class="product-item__price"> ${values.Price}</span></span>
                     </a>        
                 </li>`
-                })
-                let list = document.querySelector('.product-list')
-                list.innerHTML = html 
-                cart.start();
-                favouriteItem.start('listFavouriteLopXe')
-            })
         })
+        let list = document.querySelector('.product-list')
+        list.innerHTML = html
+        cart.start();
+        favouriteItem.start('listFavouriteLopXe')
+
     },
     Test:  function(){
         let temp=[],i=0,j=0
